@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, rgb(54, 54, 54), rgb(29, 0, 41)) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.form-container {
+  
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  box-shadow: 0px 0px 10px #c300ff;
+}
+
+input[type=text], input[type=email] {
+  background-color: #3b3b3b;
+  border: none;
+  outline: none;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #c300ff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  background-color: 3b3b3b;
+  font-weight: bold;
+  
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #c300ff;
+  color: white;
+  transition: 0.3s;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  background-color: #3b3b3b;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
