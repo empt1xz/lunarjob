@@ -25,10 +25,10 @@ function App() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          content: `Novo registro: \nNome de usuário: ${username}\nCargo: ${role} \n Email: ${email}`,
+          content: `Solicitação de Registro: \nNome de usuário: ${username}\nCargo: ${role} \n Email: ${email}`,
         }),
       });
-      alert('Dados enviados com sucesso!');
+      alert('Sua solicitação foi enviada, dentro de 12h Seu email estará apto para uso em https://accounts.zoho.com/');
     } catch (error) {
       console.error('Erro ao enviar os dados:', error);
     }
@@ -36,15 +36,15 @@ function App() {
 
   return (
     <div className="form-container">
-      <h1>Work Arcade Lunar</h1>
+      <h1>Email | Arcade Lunar</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label>Name</label>
+          <label>Nome</label>
           <input
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            required placeholder='Your name'
+            required placeholder='Seu nome'
           />
         </div>
 
@@ -54,7 +54,7 @@ function App() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            required placeholder='Your Email'
+            required placeholder='Email Desejado'
           />
         </div>
 
@@ -66,7 +66,10 @@ function App() {
             required
           >
             <option value="Developer">Developer</option>
+            <option value="Ceo">Ceo</option>
+            <option value="Co-Ceo">Co-Ceo</option>
             <option value="Design">Design</option>
+            <option value="Admin">Admin</option>
             <option value="Staff">Staff</option>
           </select>
         </div>
